@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jeu de calcul</title>
+</head>
+<body>
+    <h1>Jeu de calcul</h1>
+    <p>Repondez a la question suivante :</p>
+    <p>Combien font 3 x 6 ?</p>
+    <input type="text" id="reponse">
+    <button onclick="verifierReponse()">Vérifier</button>
+    <p id="message"></p>
+
+    <script>
+        function verifierReponse() {
+            var reponseUtilisateur = document.getElementById("reponse").value;
+            if (reponseUtilisateur === "18") {
+                document.getElementById("message").innerHTML = "Bravo ! Voici un message pour toi de la part de Sohan :<br><br>Chère Dounia, ... (le message que vous avez fourni précédemment)";
+            } else {
+                document.getElementById("message").innerHTML = "Essayez encore !";
+            }
+        }
+    </script>
+</body>
+</html>
